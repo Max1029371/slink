@@ -6,8 +6,6 @@ services:
       # Your timezone
       - TZ=UTC
 
-      # Your application hostname (Required for cookies)
-      - ORIGIN=https://your-domain.com
 
       # Require user approval before they can upload images
       - USER_APPROVAL_REQUIRED=true
