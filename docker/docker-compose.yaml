@@ -5,7 +5,13 @@ services:
     environment:
       # Your timezone
       - TZ=UTC
+
+      # Your application hostname (Required for cookies)
+      - ORIGIN=https://slink.deletz.me
+
+      # Require user approval before they can upload images
       - USER_APPROVAL_REQUIRED=false
+
       # User password requirements
       - USER_PASSWORD_MIN_LENGTH=8
       - USER_PASSWORD_REQUIREMENTS=15 # bitmask of requirements
